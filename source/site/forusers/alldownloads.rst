@@ -310,7 +310,7 @@ Alternatively you can download the key directly without manual verification::
   sudo mkdir -m755 -p /etc/apt/keyrings  # not needed since apt version 2.4.0 like Debian 12 and Ubuntu 22 or newer
   sudo wget -O /etc/apt/keyrings/qgis-archive-keyring.gpg https://download.qgis.org/downloads/qgis-archive-keyring.gpg
 
-With the keyring in place you can add the repository to as ``/etc/apt/sources.list.d/qgis.sources`` with following content::
+With the keyring in place you can add the repository to ``/etc/apt/sources.list.d/qgis.sources`` with following content::
 
   Types: deb deb-src
   URIs: *repository*
