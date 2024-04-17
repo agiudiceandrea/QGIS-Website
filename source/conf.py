@@ -69,7 +69,8 @@ master_doc = 'site/index'
 
 # General information about the project.
 project = u'QGIS'
-copyright = u'{0}, QGIS Contributors'.format(datetime.now().year)
+year_now = datetime.now().year
+copyright = u'{0}, QGIS Contributors'.format(year_now)
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -229,7 +230,7 @@ rst_epilog = docs_rst_epilog + f"""
 .. |checkbox_unchecked| image:: /static/site/common/checkbox_unchecked.png
 .. |QG| replace:: QGIS
 .. |qg| replace:: QGIS
-.. |yeartag| date:: %%Y
+.. |yeartag| replace:: {year_now}
 .. |devcite| raw:: html
 
      <a href="https://docs.qgis.org/{ltrversion}/en/docs/developers_guide/index.html"> https://docs.qgis.org/{ltrversion}/en/docs/developers_guide/index.html</a>
